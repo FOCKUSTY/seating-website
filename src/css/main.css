@@ -1,0 +1,25 @@
+body {
+    /* background-color; */
+/*     display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#floor {
+    position: absolute;
+    display: flex;
+
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
+
+    height: 99vh;
+    width: 99vw;
+}
+
+#textOne {
+    text-align: center;
+    font-size: 48px;
+}

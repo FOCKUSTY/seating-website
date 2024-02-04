@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <title>Класс</title>
+</head>
+<body id="body">
+    <div id="floor">
+        <div class="row">
+            <div id="deskOne" class="desk-hor">
+                <button id="one" class="left"></button>
+                <button id="two" class="right"></button>
+            </div>
+            <div id="deskTwo" class="desk-hor">
+                <button id="three" class="left"></button>
+                <button id="four" class="right"></button>
+            </div>
+            <div id="deskThree" class="desk-hor">
+                <button id="five" class="left"></button>
+                <button id="six" class="right"></button>
+            </div>
+            <div id="deskFour" class="desk-hor">
+                <button id="seven" class="left"></button>
+                <button id='eight' class="right"></button>
+            </div>
+            <div id="deskFive" class="desk-hor">
+                <button id="nine" class="left"></button>
+                <button id="ten" class="right"></button>
+            </div>
+            <div id="deskSix" class="desk-hor">
+                <button id="eleven" class="left"></button>
+                <button id="twelve" class="right"></button>
+            </div>
+        </div>
+        <div class="row">
+            <div id="deskSeven" class="desk-hor">
+                <button id="threeteen" class="left"></button>
+                <button id="fourteen" class="right"></button>
+            </div>
+            <div id="deskEight" class="desk-hor">
+                <button id="fiveteen" class="left"></button>
+                <button id="sixteen" class="right"></button>
+            </div>
+            <div id="deskNine" class="desk-hor">
+                <button id="seventeen" class="left"></button>
+                <button id="eightteen" class="right"></button>
+            </div>
+            <div id="deskTen" class="desk-hor">
+                <button id="nineteen" class="left"></button>
+                <button id="twenty" class="right"></button>
+            </div>
+            <div id="deskEleven" class="desk-hor">
+                <button id="twenty_one" class="left"></button>
+                <button id="twenty_two" class="right"></button>
+            </div>
+            <div id="deskTwelve" class="desk-hor">
+                <button id="twenty_three" class="left"></button>
+                <button id="twelve_four" class="right"></button>
+            </div>
+        </div>
+        <div class="row">
+            <div id="deskThreetenn" class="desk-hor">
+                <button id="twelve_five" class="left"></button>
+                <button id="twenty_five" class="right"></button>
+            </div>
+            <div id="deskFourteen" class="desk-hor">
+                <button id="twenty_six" class="left"></button>
+                <button id="twenty_seven" class="right"></button>
+            </div>
+            <div id="deskFiveteen" class="desk-hor">
+                <button id="twenty_eight" class="left"></button>
+                <button id="twenty_nine" class="right"></button>
+            </div>
+            <div id="deskSixteen" class="desk-hor">
+                <button id="threety" class="left"></button>
+                <button id="threety_one" class="right"></button>
+            </div>
+            <div id="deskSeventeen" class="desk-hor">
+                <button id="threety_two" class="left"></button>
+                <button id='threety_three' class="right"></button>
+            </div>
+        </div>
+    </div>
+
+    <div
+    
+    style=
+    "
+        position: absolute;
+        margin: 10px;
+        right: 0;
+        bottom: 0;
+
+        color: azure;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        z-index: -2;
+    "
+
+    >
+        <p>
+            Design by: aculaOne
+        </p>
+    </div>
+
+    <script src="../js/utils/copy.js"></script>
+    <script src="../js/utils/timer.js"></script>
+    <script src="../js/utils/pseudoRandom.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/documentClick.js"></script>
+    <script src="../js/utils/floorTextureDownload.js"></script>
+    <script src="../../config.json"></script>
+
+    <script>
+        const rows = document.getElementsByClassName('row')
+        const deskHistoryArray = []
+
+        for(let row of rows)
+        {
+            for(let desk of row.children)
+            {
+                desk.style.backgroundImage = `url(../Photo/desk/desc_0${pseudoRandomNumber(1, 4, 2, 1, deskHistoryArray, null, null, true, false, true)}@5x.png)`;
+            }
+        }
+    </script>
+
+</body>
+</html>
