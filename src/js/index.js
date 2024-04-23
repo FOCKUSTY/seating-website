@@ -1,4 +1,4 @@
-/* const studentsOriginal =
+const studentsOriginal =
 [
     "Бабушкин Рома",
     "Баимов Айгиз",
@@ -26,8 +26,9 @@
     "Юмадилов Асрен",
     "Юсупова Малика",
     "Юсупова Риана"
-]; */
-const students = copy(studentsOriginal)
+];
+
+const students = copy(studentsOriginal);
 
 let elements = [];
 
